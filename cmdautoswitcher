@@ -1,0 +1,40 @@
+:: don't modify it...if you don't know what are you doing...
+:: For more visit my fb page : fb.com/KKADDS
+
+@echo off&Setlocal EnableDelayedExpansion
+:p
+@title kk-17-20-V2 : created by kk
+@mode 87,46
+color 2
+cls
+echo. & echo.        
+echo.   
+echo.    ^|    ^-   ^|    ^-
+echo.    ^|  ^-     ^|  ^-
+echo.    ^|^=       ^|^=
+echo.    ^|  ^-     ^|  ^-
+echo.    ^|    ^-   ^|    ^-
+echo.    
+echo. & echo. & echo.
+echo copyrights@2019/2020 by kk-adds >NUL
+echo playing is believing            >NUL
+echo kk-17-20-V2 >NUL
+echo """""""""""" >NUL
+::xcopy /s "modules\kk-Switcher-III\kk-dt-III\kk-GM\eF20\kk-GM.cpk" ".\.\.\download" /Y
+::xcopy /s "modules\kk-Switcher-III\kk-dt-III\kk-GM\JUV\kk-GM.cpk" ".\.\.\download" /Y
+::xcopy /s "modules\kk-Switcher-III\kk-dt-III\kk-GM\MU\kk-GM.cpk" ".\.\.\download" /Y
+::xcopy /s "modules\kk-Switcher-III\kk-dt-III\kk-GM\BM\kk-GM.cpk" ".\.\.\download" /Y
+::xcopy /s "modules\kk-Switcher-III\kk-dt-III\kk-GM\RM\kk-GM.cpk" ".\.\.\download" /Y
+Set "x0=eF20"
+Set "x1=JUV"
+Set "x2=MU"
+Set "x3=BM"
+Set "x4=RM"
+Set /A "y=%Random% %% 5"
+xcopy /s "modules\kk-Switcher-III\kk-dt-III\kk-GM\!x%y%!\kk-GM.cpk" ".\.\.\download" /Y >NUL
+timeout 3 >NUL
+start sider.exe >NUL
+:: start "" /AboveNormal "partition:\directory\pes-exe-name.exe" >NUL
+start "" /AboveNormal PES2020.exe >NUL
+timeout 3 >NUL
+EXIT
